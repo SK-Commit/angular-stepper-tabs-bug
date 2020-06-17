@@ -1,0 +1,71 @@
+<mat-tab-group>
+  <mat-tab label="Planning">
+    <mat-vertical-stepper>
+      <mat-step label="Choose date and vehicle(s)" state="chooseinput">
+        <div>
+          <button mat-raised-button color="primary" class="margin-top" matStepperNext>
+            Next
+          </button>
+        </div>
+      </mat-step>
+      <mat-step label="Organize vehicle(s)" state="organizeOrders">
+        <div>
+          <button mat-raised-button color="primary" class="margin-top" matStepperPrevious>
+            Back
+          </button>
+          <button mat-raised-button color="primary" class="margin-top" matStepperNext>
+            Next
+          </button>
+        </div>
+      </mat-step>
+      <mat-step label="See map" state="maps">
+        <div>
+          <button mat-raised-button color="primary" class="margin-top" matStepperPrevious>
+            Back
+          </button>
+          <button mat-raised-button color="primary" class="margin-top" matStepperNext>
+            Next
+          </button>
+        </div>
+      </mat-step>
+      <mat-step label="Save Route(s)" state="routes">
+        <div>
+          <button mat-raised-button color="primary" class="margin-top" matStepperPrevious>
+            Back
+          </button>
+        </div>
+      </mat-step>
+
+      <ng-template matStepperIcon="chooseinput">
+        <mat-icon class="stepper-icon">event</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="organizeOrders">
+        <mat-icon class="stepper-icon">playlist_add</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="maps">
+        <mat-icon class="stepper-icon">map</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="routes">
+        <mat-icon class="stepper-icon">assignment_turned_in</mat-icon>
+      </ng-template>
+    </mat-vertical-stepper>
+  </mat-tab>
+  <mat-tab label="Vehicle Management">
+    <ng-template matTabContent>
+      123
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Skill Management">
+    <ng-template matTabContent>
+      456
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="All routes">
+    <ng-template matTabContent>
+      789
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Settings">
+    test
+  </mat-tab>
+</mat-tab-group>
